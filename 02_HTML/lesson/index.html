@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="">
+       <tr>
+        <th>&emsp;&emsp;</th><th>&emsp;&emsp;</th>
+       </tr>
+       <tr>
+        <td>&emsp;&emsp;</td><td>&emsp;&emsp;</td>
+       </tr> 
+    </table>
+
+    <hr>
+
+    <table border="">
+        <caption>Заголовок таблицы</caption>
+        <tr>
+            <th>Заголовок столбца №1</th>
+            <th>Заголовок столбца №2</th>
+        </tr>
+        <tr>
+            <td>Данные во второй строке, в первой ячейке</td>
+            <td>Данные во второй строке, в первой ячейке</td>
+        </tr> 
+     </table>
+
+     <hr>
+
+     <table border="">
+        <tr>
+            <td>Столбец 1</td><td>Столбец 2</td>
+        </tr>
+        <tr>
+             <td colspan="2">Двойной столбец</td>
+        </tr>
+      </table>
+      <br>
+      <table border="">
+        <tr>
+             <td>Строка 1</td><td rowspan="2">Двойная строка </td>
+        </tr>
+        <tr>
+             <td>Строка 2</td>
+        </tr>
+      </table>
+      
+      <hr>
+
+      <table width=“400” border="1">
+        <col width="20%"><col width="80%">
+        <tr height="150">
+            <th>1.1</th>
+            <th>1.2</th>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!--Задание 1-->
+    <table width="200" border="">
+        <caption>Месяц моего рождения</caption>
+        <tr>
+            <th colspan="6"><strong>Январь</strong></th>
+        </tr>
+        <tr>
+            <td><strong>Пн</strong></td>
+            <td width="25"></td>
+            <td>7</td>
+            <td>14</td>
+            <td>21</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td><strong>Вт</strong></td>
+            <td>1</td>
+            <td>8</td>
+            <td>15</td>
+            <td>22</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td><strong>Ср</strong></td>
+            <td>2</td>
+            <td>9</td>
+            <td>16</td>
+            <td>23</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td><strong>Чт</strong></td>
+            <td>3</td>
+            <td>10</td>
+            <td>17</td>
+            <td>24</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td><strong>Пт</strong></td>
+            <td>4</td>
+            <td>11</td>
+            <td>18</td>
+            <td>25</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Сб</strong></td>
+            <td>5</td>
+            <td>12</td>
+            <td>19</td>
+            <td>26</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Вс</strong></td>
+            <td>6</td>
+            <td>13</td>
+            <td>20</td>
+            <td>27</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table width="420" height="200" border="">
+        <caption>Плаваем в ячейке</caption>
+        <tr>
+            <td valign="top" align="left">align="left"<br>valign="top"</td>
+            <td valign="top" align="center">valign="top"<br>align="center"</td>
+            <td valign="top" align="right">valign="top"<br>align="right"</td>
+        </tr>
+        <tr>
+            <td valign="middle" align="left">valign="middle"<br>align="left"</td>
+            <td valign="middle" align="center">valign="middle"<br>align="center"</td>
+            <td valign="middle" align="right">valign="middle"<br>align="right"</td>
+        </tr>
+        <tr>
+            <td valign="bottom" align="left">valign="bottom"<br>align="left"</td>
+            <td valign="bottom" align="center">valign="bottom"<br>align="center"</td>
+            <td valign="bottom" align="right">valign="bottom"<br>align="right"</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!--Задание 2-->
+    <table width="500" border="">
+        <tr align="center" >
+                <th>Город</th>
+                <th>Утро</th>
+                <th>День</th>
+                <th>Вечер</th>
+                <th>Ночь</th>
+        </tr>
+        <tr align="left">
+            <th align="center">Минск</th>
+            <td>-5&deg;</td>
+            <td>+5&deg;</td>
+            <td rowspan="2">+2&deg;</td>
+            <td>-10&deg;</td>
+        </tr>
+        <tr align="left">
+            <th align="center">Брест</th>
+            <td>0&deg;</td>
+            <td>+9&deg;</td>
+            <td>-4&deg;</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="">
+        <caption>Секции таблицы</caption>
+        <thead>
+            <tr>
+                <th>Столбец 1</th><th>Столбец 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ячейка 1.1</td><td>Ячейка 1.2</td>
+            </tr>
+            <tr>
+                <td>Ячейка 2.1</td><td>Ячейка 2.2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итог по яачейке 2.1</td>
+                <td>Итог по ячейке 2.2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr> 
+</body>
+</html>

@@ -7,6 +7,48 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div align="center">
+        <h1>Заполните анкету</h1>
+    </div>
+    <form name="profile_form">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="last_name" id="last_name" placeholder="Фамилия" pattern="^[А-Я][а-я]{1,25}" required autofocus>
+            text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле <br>
+            <input type="text" name="first_name" id="first_name" placeholder="Имя" pattern="^[А-Я][а-я]{1,20}" required>
+            text: Только кириллица, без пробелов, длина поля 20, обязательное поле <br>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество" pattern="^[А-Я][а-я]{1,24}" required>
+            text: Только кириллица, без пробелов, длина поля 24, обязательное поле
+            <fieldset>
+                <legend>Паспортные данные</legend>
+
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>array: Хобби</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Координаты</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>

@@ -13,15 +13,20 @@
     <form name="profile_form">
         <fieldset>
             <legend>Личные данные</legend>
-            <input type="text" name="last_name" id="last_name" placeholder="Фамилия" pattern="^[А-Я][а-я]{1,25}" required autofocus>
+            <input type="text" name="last_name" id="last_name" placeholder="Фамилия" pattern="^[А-Я][а-я]{1,25}" required1 autofocus>
             text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле <br>
-            <input type="text" name="first_name" id="first_name" placeholder="Имя" pattern="^[А-Я][а-я]{1,20}" required>
+            <input type="text" name="first_name" id="first_name" placeholder="Имя" pattern="^[А-Я][а-я]{1,20}" required1>
             text: Только кириллица, без пробелов, длина поля 20, обязательное поле <br>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество" pattern="^[А-Я][а-я]{1,24}" required>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество" pattern="^[А-Я][а-я]{1,24}" required1>
             text: Только кириллица, без пробелов, длина поля 24, обязательное поле
             <fieldset>
                 <legend>Паспортные данные</legend>
-
+                text: Серия - только загланые буквы с длиной 2 и максимальным количеством символов 2, количество 
+                букв не менее 2,<br> обязательное поле<br>
+                text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество 
+                цифр не менее 7, обязательное поле<br>
+                <input type="text" name="series" id="series" placeholder="AA" pattern="^[A-Z]{2}$" required1>
+                <input type="text" name="passport_number" id="passport_number" placeholder="1234567" pattern="[1-7]{7}$" required1>
             </fieldset>
             <fieldset>
                 <legend>Дата рождения</legend>
@@ -48,7 +53,6 @@
         <fieldset>
             <legend>Кнопки управления</legend>
         </fieldset>
-        <input type="submit" value="submit">
     </form>
 </body>
 </html>

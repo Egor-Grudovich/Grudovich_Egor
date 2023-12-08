@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <table border="" width="700">
+        <caption>Заголовок таблицы</caption>
+        <tr align="center">
+            <td><h1>Заголовок 1</h1></td>
+            <td><h2>Заголовок 2</h2></td>
+            <td><h3>Заголовок 3</h3></td>
+            <td><h4>Заголовок 4</h4></td>
+        </tr>
+        <tr align="center" height="80">
+            <td valign="bottom">Ячейка 1</td>
+            <td colspan="2">Ячейка 2</td>
+            <td valign="top">Ячейка 3</td>
+        </tr>
+        <tr>
+            <td valign="bottom" align="center">Ячейка 4</td>
+            <td rowspan="2" colspan="3">
+                <table border="3">
+                    <tr align="center">
+                        <td></td>
+                        <td>
+                            <h1>
+                                Заголовок 1 <br>
+                                Таблицы 2
+                            </h1>
+                        </td>
+                        <td>
+                            <h2>
+                                Заголовок 2 <br>
+                                Таблицы 2
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <h3>
+                                Заголовок 3 <br>
+                                Таблицы 2
+                            </h3>
+                        </td>
+                        <td>
+                            Ячейка 1 <br>
+                            Таблицы 2
+                        </td>
+                        <td>
+                            Ячейка 2 <br>
+                            Таблицы 2
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <h4>
+                                Заголовок 4 <br>
+                                Таблицы 2
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            Ячейка 3 <br>
+                            Таблицы 2
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">Ячейка5</td>
+        </tr>
+    </table>
+</body>
+</html>

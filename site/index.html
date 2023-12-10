@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+    <style>
+      body {
+        background-color: rgb(31, 56, 28);
+      }
+      * {
+        margin: 0;
+        font-family: "Courier New", monospace;
+        color: white;
+        text-decoration: none;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 13rem;
+      }
+      #snow {
+        z-index: 2;
+      }
+      .header0 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .header2 {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+      .menu {
+        background-color: #631d1b;
+        padding: 1rem 2rem 1rem 0;
+        border-radius: 0 1rem 1rem 0;
+        font-style: none;
+      }
+      .content {
+        min-width: 60%;
+        border: 10px solid transparent;
+        border-image: url(border.png) 20% round;
+        margin-left: 2rem;
+        margin-right: 2px;
+        height: auto;
+      }
+      .banner {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer {
+        height: 3rem;
+        clear: both;
+        background: #631d1b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .header1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+      }
+      .clear {
+        /*height:10px;
+      background:#000000;*/
+        clear: both;
+      }
+      .bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -7rem;
+        z-index: -1;
+      }
+      #MyFrame {
+        width: 100%;
+        overflow: scroll;
+        border: none;
+        background-color: #e0f9ff;
+        height: 100%;
+      }
+      li {
+        font-size: 1.3rem;
+        color: #fff9c4
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        list-style-type: none;
+      }
+    </style>
+    <script type="text/javascript">
+      function newSrc(newSrc) {
+        document.getElementById("MyFrame").src = newSrc;
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="snow/snow.js"></script>
+  </head>
+  <body>
+    <div id="snow"></div>
+    <div class="header">
+      <img src="content.png" alt="nema" width="500px" />
+      <img class="bg" src="rofl.png" alt="cring" width="100%">
+    </div>
+    <div class="wrap">
+      <div class="menu">
+        <ul>
+          <li><a class="header0" href="#" onclick="newSrc('sample.html');">Главная</a></li>
+          <br>
+          <li class="header1">01_HTML</li>
+          <ul>
+            <li class="header2">add</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../01_HTML/add/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">home</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../01_HTML/home/index1.html');"
+                  >index1.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../01_HTML/home/index2.html');"
+                  >index2.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../01_HTML/home/index3.html');"
+                  >index3.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">lesson</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../01_HTML/lesson/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li>
+              <a href="#" onclick="newSrc('../01_HTML/index.html');"
+                >index.html</a
+              >
+            </li>
+          </ul>
+          <hr>
+          <li class="header1">02_HTML</li>
+          <ul>
+            <li class="header2">lesson</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../02_HTML/lesson/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li>
+              <a href="#" onclick="newSrc('../02_HTML/index.html');"
+                >index.html</a
+              >
+            </li>
+          </ul>
+          <hr>
+          <li class="header1">03_HTML</li>
+          <ul>
+            <li class="header2">add</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../03_HTML/add/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">home</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../03_HTML/home/index1.html');"
+                  >index1.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../03_HTML/home/index2.html');"
+                  >index2.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../03_HTML/home/index3.html');"
+                  >index3.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">lesson</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../03_HTML/lesson/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li>
+              <a href="#" onclick="newSrc('../03_HTML/index.html');"
+                >index.html</a
+              >
+            </li>
+          </ul>
+          <hr>
+          <li class="header1">04_HTML</li>
+          <ul>
+            <li class="header2">home</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../04_HTML/home/index1.html');"
+                  >index1.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../04_HTML/home/index2.html');"
+                  >index2.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../04_HTML/home/index3.html');"
+                  >index3.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">lesson</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../04_HTML/lesson/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li>
+              <a href="#" onclick="newSrc('../04_HTML/index.html');"
+                >index.html</a
+              >
+            </li>
+          </ul>
+          <hr>
+          <li class="header1">05_HTML</li>
+          <ul>
+            <li class="header2">home</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../05_HTML/home/index1.html');"
+                  >index1.html</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="newSrc('../05_HTML/home/index2.html');"
+                  >index2.html</a
+                >
+              </li>
+            </ul>
+            <li class="header2">lesson</li>
+            <ul>
+              <li>
+                <a href="#" onclick="newSrc('../05_HTML/lesson/index.html');"
+                  >index.html</a
+                >
+              </li>
+            </ul>
+            <li>
+              <a href="#" onclick="newSrc('../05_HTML/index.html');"
+                >index.html</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="content">
+        <iframe src="sample.html" id="MyFrame"></iframe>
+      </div>
+      <div class="banner">
+        <a href="https://www.youtube.com/watch?v=HEAdMMbGG5U">
+        <img width="300" height="auto" src="pivo.png" alt="scam" />
+        </a><a href="https://www.youtube.com/watch?v=HEAdMMbGG5U"><img width="300" height="auto" src="meme.gif" alt="scam" />
+      </div></a>
+      <div class="clear"></div>
+    </div>
+    <div class="footer">©Egor Grudovich
+    <div>Github: <a href="https://github.com/Egor-Grudovich">Egor-Grudovich</a></div>
+  </div></body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu .menuItemCurrent {
+            some: styles
+        }
+        .menu .menuItemSelected {
+            some: styles
+        }
+        .menu .menuItemDefault {
+            some: styles
+        }
+        .menu li a {
+            some: styles
+        }
+        .menu li {
+            some: styles
+        }
+        .menu {
+            some: styles
+        }
+        p em {
+            color: #0000FF;
+        }
+        .bigtext {
+            font-size: large;
+        }
+        .redtext {
+            color: #FF0000;
+        }
+        .attention {
+            color: #FF0000;
+            font-style: italic;
+        }
+        p {
+            color: #0000FF;
+            font-size: 10pt;
+        }
+        strong {
+            font-size: 1cm;
+        }
+        em {
+            color: #00FF00;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        p.mini {
+            color: #FF0000;
+            font-size: smaller;
+        }
+        p.sel strong {
+            color: #FF0000
+        }
+        h1 {
+            opacity: 9;
+        }
+        h2 {
+            opacity: 7;
+        }
+        h3 {
+            opacity: 5;
+        }
+    </style>
+</head>
+<body>
+    <p class="redtext">Это красный текст</p>
+    <p><strong class="attention">Стилевой класс требует явной привязки атрибутом тега class!</strong></p>
+    <p class="redtext">Это ещё один красный текст</p>
+    <p><strong class="attention">Тут тоже текст такой же как и выше в класе attention</strong></p>
+
+    <hr>
+
+    <strong class="attention bigtext">Стилевой класс требует явной привязки атрибутом тега class!</strong>
+
+    <hr>
+
+    <p id="bigtext">Это большой текст</p>
+
+    <hr>
+
+    <p><em>Этот текст</em> станет синим</p>
+    <em>А этот не станет</em>
+
+    <hr>
+
+    <ul class="menu">
+        <li><a href="#">Item 01</a></li>
+        <li><a href="#">Item 02</a></li>
+        <li><a href="#">Item 03</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="menu">
+        <li class="menuItemDefault">
+            <a href="#">Item 01</a>
+        </li>
+        <li class="menuItemDefault menuItemCurrent">
+            <a href="#">Item 02</a>
+        </li>
+        <li class="menuItemDefault menuItemSelected">
+            <a href="#">Item 03</a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <p class="mini">Этот текст красный и маленький</p>
+    <p class="sel">Обычный текст<strong> красный текст</strong></p>
+
+    <hr>
+
+    <p style="font-size: smaller; font-style: italic;">Маленький курсивчик</p>
+
+    <hr>
+
+    <p>Текст 1</p>
+    <strong>Текст 2</strong>
+    <em>Текст 3</em>
+
+    <hr>
+
+    <article>
+        <h1>Текст 1</h1>
+        <h2>Текст 2</h2>
+        <h3>Текст 3</h3>    
+    </article>
+</body>
+</html>
